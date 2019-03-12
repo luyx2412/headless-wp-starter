@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "@containers": "./containers",
+          "@components": "./components",
+          "@lib": "./lib"
+        }
+      }
+    ],
+    ["@babel/plugin-proposal-class-properties"],
+    ["@babel/plugin-proposal-object-rest-spread"]
+  ],
+  "presets": ["next/babel"]
+}
